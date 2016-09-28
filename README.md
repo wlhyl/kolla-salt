@@ -10,7 +10,7 @@ yum install -y salt-ssh
 
 # 下载kolla-salt
 ```bash
-https://github.com/wlhyl/kolla-salt.git
+git clone https://github.com/wlhyl/kolla-salt.git
 ```
 
 # 复制kolla-salt配置文件到/srv
