@@ -41,11 +41,21 @@ pip:
       - pkg: packages
 
 {% if openstack_version == 'mitaka' %}
+
 ansible1.9:
   pkg:
     - installed
     - require:
       - pkg: epel-release
+
+{% elif openstack_version == 'newton' %}
+
+ansible:
+  pkg:
+    - installed
+    - require:
+      - pkg: epel-release
+
 {% endif %}
 
 kolla:

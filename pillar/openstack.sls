@@ -1,2 +1,2 @@
 openstack:
-  version: mitaka
+  version: newton
